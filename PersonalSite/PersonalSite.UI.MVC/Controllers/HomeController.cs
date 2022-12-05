@@ -8,17 +8,70 @@ namespace PersonalSite.UI.MVC.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IConfiguration _config;
+
+        public HomeController(ILogger<HomeController> logger, IConfiguration config)
         {
             _logger = logger;
+            _config = config;
         }
 
+        //Main page Actions
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult About()
+        {
+            return View();
+        }
+
+        public IActionResult Resume()
+        {
+            return View();
+        }
+
+        public IActionResult Projects()
+        {
+            return View();
+        }
+
+        public IActionResult Classmates()
+        {
+            return View();
+        }
+
+        //Contact will go here as well
+
+        //Projects Views
+
+        public IActionResult PortfolioDetails()
+        {
+            return View();
+        }
+
+        public IActionResult APIIntegration()
+        {
+            return View();
+        }
+
+        public IActionResult BiologyPublication()
+        {
+            return View();
+        }
+
+        public IActionResult ReactActivities()
+        {
+            return View();
+        }
+
+        public IActionResult SAT()
+        {
+            return View();
+        }
+
+        public IActionResult StoreFrontApp()
         {
             return View();
         }

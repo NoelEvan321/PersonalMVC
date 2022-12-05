@@ -1,0 +1,111 @@
+﻿@{
+    ViewData["Title"] = "Projects";
+}
+<main id="main">
+
+    <!-- ======= Projects Section ======= -->
+    <section id="portfolio" class="portfolio bg-dark text-light">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2 class="greenTitles">Projects</h2>
+                <p>Below I list and briefly describe the projects I've done and participated in. These projects have each played a major role in my professional development.</p>
+            </div>
+
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-app">Development</li>
+                        <li data-filter=".filter-card">Coming Soon</li>
+                        <li data-filter=".filter-web">Biology</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/myimages/csharp_logo.png" class="img-fluid" alt="C# Purple Hexagon logo">
+                        <div class="portfolio-info">
+                            <h4>Dungeon Application Summary</h4>
+                            <p>Development Project</p>
+                            <div class="portfolio-links">
+                                <a href="@Url.Action("PortfolioDetails", "Home")" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/myimages/Biochem-unslpash.jpg" class="img-fluid" alt="Cell-culture Freeze Tubes.">
+                        <div class="portfolio-info">
+                            <h4>Biology Project-Publication</h4>
+                            <p>Relevent Skills Obtained</p>
+                            <div class="portfolio-links">
+                                <a href="@Url.Action("BiologyPublication", "Home")" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/myimages/storefront-philippe-yuan-aLX0R6qg01Y-unsplash.jpg" class="img-fluid" alt="Random Store in a mall">
+                        <div class="portfolio-info">
+                            <h4>Store Front Application</h4>
+                            <p>Development Project- In progress. Check back later.</p>
+                            <div class="portfolio-links">
+                                <a href="@Url.Action("StoreFrontApp", "Home")" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/myimages/API-mika-baumeister-Wpnoqo2plFA-unsplash.jpg" class="img-fluid" alt="Blured and random data on a sheet of paper">
+                        <div class="portfolio-info">
+                            <h4>API Integration</h4>
+                            <p>Development Project. In progress. Check back later.</p>
+                            <div class="portfolio-links">
+                                <a href="@Url.Action("APIIntegration", "Home")" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/myimages/Scheduling-jon-tyson-FlHdnPO6dlw-unsplash.jpg" class="img-fluid" alt="A pile of old clocks">
+                        <div class="portfolio-info">
+                            <h4>SAT</h4>
+                            <p>Development Project. In progress. Check back later.</p>
+                            <div class="portfolio-links">
+                                <a href="@Url.Action("SAT", "Home")" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/myimages/React-lautaro-andreani-xkBaqlcqeb4-unsplash.jpg" class="img-fluid" alt="Random and blurred code and the React logo">
+                        <div class="portfolio-info">
+                            <h4>React Activities</h4>
+                            <p>Development Project. In progress. Check back later.</p>
+                            <div class="portfolio-links">
+                                <a href="@Url.Action("ReactActivities", "Home")" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Projects Section -->
+
+</main><!-- End #main -->
