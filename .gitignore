@@ -350,5 +350,6 @@ MigrationBackup/
 .ionide/
 # secret stuffs
 /appsettings.json
+/appsettings.Development.json
 /PersonalSite.UI.MVC/appsettings.json
 /PersonalSite/PersonalSite.UI.MVC/appsettings.json
