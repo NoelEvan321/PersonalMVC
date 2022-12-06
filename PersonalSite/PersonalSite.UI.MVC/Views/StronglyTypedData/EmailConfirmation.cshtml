@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Email Confirmation";
+}
+
+@model PersonalSite.UI.MVC.Models.ContactViewModel
+
+<!-- ======= Main ======= -->
+<main id="main">
+    <!-- ======= Confirmation Section ======= -->
+    <section class="contact bg-dark text-light" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+            <div class="row">
+
+                <div class="col-lg-12">
+
+                    <div class="info-box text-center">
+                        <h3>Message Sent!</h3>
+                        <br />
+                        <p>
+                            Thank you for contacting us! A member of our tema will respond to your message using the provided email address, @Model.Email, in the next 1-3 business days.
+                        </p>
+
+                        <br />
+
+                        <div class="offset-3 col-md-6 text-center">
+                            <p>
+                                You sent the following message on
+                                @DateTime.Now.Date.ToShortDateString() at
+                                @DateTime.Now.ToShortTimeString() :
+                            </p>
+                        </div>
+
+                        <br />
+
+                        <div class="offset-3 col-md-6">
+                            <p>
+                                <em>@Model.Message</em>
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Confirmation Section -->
+
+</main><!-- End #main -->
