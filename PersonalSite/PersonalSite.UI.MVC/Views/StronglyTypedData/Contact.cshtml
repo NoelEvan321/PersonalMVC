@@ -1,0 +1,86 @@
+﻿@model PersonalSite.UI.MVC.Models.ContactViewModel
+
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<main id="main">
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact bg-dark text-light">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title bg-dark text-light">
+                <h2 class="greenTitles">Contact</h2>
+                <p>If you're looking to hire me full-time or for freelance work, send me an email or leave me a voicemail. I'll get back to you as soon as possible! The Contact Form is coming soon.</p>
+            </div>
+
+            <div>
+                <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.27506764418!2d-94.60958528478878!3d38.96338667956044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0e925e366ed0f%3A0x73aec4617abd2f03!2sCentriq!5e0!3m2!1sen!2sus!4v1667104559214!5m2!1sen!2sus" frameborder="0" allowfullscreen></iframe>
+
+            </div>
+
+            <div class="row mt-5">
+
+                <div class="col-lg-4">
+                    <div class="info bg-dark text-light">
+                        <div class="address text-light">
+                            <i class="bi bi-geo-alt"></i>
+                            <h4 class="text-light">Location:</h4>
+                            <p class="text-light">Kansas City, MO 64138</p>
+                        </div>
+
+                        <div class="email">
+                            <i class="bi bi-envelope"></i>
+                            <h4 class="text-light">Email:</h4>
+                            <p class="text-light">evannoel1993@gmail.com</p>
+                        </div>
+
+                        <div class="phone">
+                            <i class="bi bi-phone"></i>
+                            <h4 class="text-light">Call:</h4>
+                            <p class="text-light">+1(417) 825-3397</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-8 mt-5 mt-lg-0 bg-dark text-light">
+
+                    <form asp-action="Contact" class="bg-dark text-light">
+                        <div asp-validation-summary="ModelOnly" class="bg-dark text-light"></div>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input asp-for="Name" class="form-control" id="name" placeholder="Your Name" />
+                                <span asp-validation-for="Name" class="text-light"></span>
+                            </div>
+                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                <input asp-for="Email" class="form-control" id="email" placeholder="Your Email" />
+                                <span asp-validation-for="Email" class="text-light"></span>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input asp-for="Subject" class="form-control" id="subject" placeholder="Subject" />
+                            <span asp-validation-for="Subject" class="text-light"></span>
+                        </div>
+                        <div class="form-group mt-3">
+                            <textarea asp-for="Message" class="form-control" rows="5" placeholder="Leave me a message!"></textarea>
+                            <span asp-validation-for="Message" class="text-danger"></span>
+                        </div>
+                        <div class="text-center"><button class="btn-about" type="submit">Send Message</button></div>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+@*@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }*@
